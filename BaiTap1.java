@@ -23,16 +23,41 @@ public class BaiTap1 {
     }
 
     public static void squareTriangel(int g){
+        System.out.println("Hinh 1");
         for (int i = 0; i <= g; i++){
             for (int j = 0; j < i; j++){
                 System.out.print("*");
             }
             System.out.println();
         }
-        System.out.println();
+        System.out.println("Hinh 2");
         for (int i = 0; i <= g; i++){
             for (int j = g; j > i; j--){
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println("Hinh 3");
+        for (int i = 0; i <= g; i++){
+            for (int j = g; j >= i; j--){
+                System.out.print(" ");
+                if (i == j) {
+                    for (int k = 0; k <= i; k++){
+                        System.out.print("*");
+                    }
+                }
+            }
+            System.out.println();
+        }
+        System.out.println("Hinh 4");
+        for (int i = g; i >= 1; i--){
+            for (int j = g; j >= 1; j--){
+                if (j == i){
+                    for (int k = 1; k <= i; k++){
+                        System.out.print("*");
+                    }
+                }else
+                    System.out.print(" ");
             }
             System.out.println();
         }
