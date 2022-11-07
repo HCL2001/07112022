@@ -11,6 +11,7 @@ public class BaiTap1 {
         int height = sc.nextInt();
         drawRectangle(weight, height);
         squareTriangel(5);
+        isoscelesTriangle(5);
     }
     public static void drawRectangle(int w, int h){
         for (int i = 0; i < w; i++){
@@ -32,6 +33,20 @@ public class BaiTap1 {
         for (int i = 0; i <= g; i++){
             for (int j = g; j > i; j--){
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void isoscelesTriangle(int dai){
+        for (int i = 0; i < dai; i++){
+            int j;
+            //Thêm vòng lặp này để đặt khoảng cách ở trước mỗi hàng
+            for(j = i; j < dai; j++){
+                System.out.print(" ");
+            }
+            for(j = dai-i; j < dai; j++){
+                System.out.print("* ");
             }
             System.out.println();
         }
